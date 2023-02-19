@@ -1,15 +1,21 @@
-# Range Calculator v 09.02.2023
-this program does not display the exact value of the range. the purpose of creating is:
-     the practice of compiling some formulas for calculations, 
-     the practice of working with forms, 
-     coding, 
-     working on errors,
-     and introducing some OOP principles into a simple program that works without these principles at the initial stage
 
-#development opportunities:
+Range Calculator  09.02.2023 //v1.0-v1.1
+ 
+1.First form with elements is constructed
+2.Basic programe code maked in simple method (instr if, elif...)
 
-Main porpose is to add OOP principe 19.02.2023
+Update 1.2 // 19.02.2023
     
+1.Conected non local Git 
+2.Main porpose is to add OOP principe:
+   *created a separate class for the RangeCalculator, which encapsulates the logic for calculating the fuel required.
+    *this allows for better separation of concerns and easier maintenance of the code.
+3.Optimized the code in Form1 constructor 
+   * seted default values
+    * added FormLoad events witch set default values
+
+-------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 1. data management...
          
 *add user input validation (For example, it may not make sense to allow a vehicle weight of 100,000 kg. 
