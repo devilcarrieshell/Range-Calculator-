@@ -59,7 +59,7 @@
             // 
             this.chkPremium.AutoSize = true;
             this.chkPremium.BackColor = System.Drawing.SystemColors.Window;
-            this.chkPremium.Location = new System.Drawing.Point(275, 309);
+            this.chkPremium.Location = new System.Drawing.Point(278, 173);
             this.chkPremium.Name = "chkPremium";
             this.chkPremium.Size = new System.Drawing.Size(66, 17);
             this.chkPremium.TabIndex = 29;
@@ -70,7 +70,7 @@
             // 
             this.chkDisel.AutoSize = true;
             this.chkDisel.BackColor = System.Drawing.SystemColors.Window;
-            this.chkDisel.Location = new System.Drawing.Point(275, 286);
+            this.chkDisel.Location = new System.Drawing.Point(278, 150);
             this.chkDisel.Name = "chkDisel";
             this.chkDisel.Size = new System.Drawing.Size(57, 17);
             this.chkDisel.TabIndex = 28;
@@ -79,28 +79,28 @@
             // 
             // txtEngineSize
             // 
-            this.txtEngineSize.Location = new System.Drawing.Point(240, 394);
+            this.txtEngineSize.Location = new System.Drawing.Point(243, 258);
             this.txtEngineSize.Name = "txtEngineSize";
             this.txtEngineSize.Size = new System.Drawing.Size(136, 20);
             this.txtEngineSize.TabIndex = 27;
             // 
             // txtVehicleWeight
             // 
-            this.txtVehicleWeight.Location = new System.Drawing.Point(240, 362);
+            this.txtVehicleWeight.Location = new System.Drawing.Point(243, 226);
             this.txtVehicleWeight.Name = "txtVehicleWeight";
             this.txtVehicleWeight.Size = new System.Drawing.Size(136, 20);
             this.txtVehicleWeight.TabIndex = 26;
             // 
             // txtTripDistance
             // 
-            this.txtTripDistance.Location = new System.Drawing.Point(203, 114);
+            this.txtTripDistance.Location = new System.Drawing.Point(243, 114);
             this.txtTripDistance.Name = "txtTripDistance";
             this.txtTripDistance.Size = new System.Drawing.Size(73, 20);
             this.txtTripDistance.TabIndex = 25;
             // 
             // txtFuelConsumption
             // 
-            this.txtFuelConsumption.Location = new System.Drawing.Point(203, 86);
+            this.txtFuelConsumption.Location = new System.Drawing.Point(243, 86);
             this.txtFuelConsumption.Name = "txtFuelConsumption";
             this.txtFuelConsumption.Size = new System.Drawing.Size(73, 20);
             this.txtFuelConsumption.TabIndex = 24;
@@ -108,7 +108,7 @@
             // btnCalculate
             // 
             this.btnCalculate.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.btnCalculate.Location = new System.Drawing.Point(46, 451);
+            this.btnCalculate.Location = new System.Drawing.Point(49, 315);
             this.btnCalculate.Name = "btnCalculate";
             this.btnCalculate.Size = new System.Drawing.Size(330, 40);
             this.btnCalculate.TabIndex = 23;
@@ -120,7 +120,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.SystemColors.Window;
-            this.label7.Location = new System.Drawing.Point(197, 423);
+            this.label7.Location = new System.Drawing.Point(200, 287);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(179, 13);
             this.label7.TabIndex = 22;
@@ -130,7 +130,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.Window;
-            this.label5.Location = new System.Drawing.Point(32, 397);
+            this.label5.Location = new System.Drawing.Point(35, 261);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(106, 13);
             this.label5.TabIndex = 20;
@@ -140,7 +140,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.SystemColors.Window;
-            this.label3.Location = new System.Drawing.Point(32, 362);
+            this.label3.Location = new System.Drawing.Point(35, 226);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(127, 13);
             this.label3.TabIndex = 18;
@@ -170,7 +170,7 @@
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -6);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(502, 592);
             this.pictureBox1.TabIndex = 30;
@@ -202,7 +202,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(27, 49);
+            this.label8.Location = new System.Drawing.Point(690, 298);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(147, 18);
             this.label8.TabIndex = 33;
@@ -212,7 +212,7 @@
             // 
             this.petrolheadBtn.AutoSize = true;
             this.petrolheadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.petrolheadBtn.Location = new System.Drawing.Point(195, 49);
+            this.petrolheadBtn.Location = new System.Drawing.Point(829, 335);
             this.petrolheadBtn.Name = "petrolheadBtn";
             this.petrolheadBtn.Size = new System.Drawing.Size(117, 20);
             this.petrolheadBtn.TabIndex = 34;
@@ -224,7 +224,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(655, 178);
+            this.label4.Location = new System.Drawing.Point(779, 448);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(106, 13);
             this.label4.TabIndex = 38;
@@ -234,7 +234,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.SystemColors.Window;
-            this.label10.Location = new System.Drawing.Point(654, 150);
+            this.label10.Location = new System.Drawing.Point(778, 420);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(107, 13);
             this.label10.TabIndex = 40;
@@ -244,7 +244,7 @@
             // 
             this.electricBtn.AutoSize = true;
             this.electricBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.electricBtn.Location = new System.Drawing.Point(753, 110);
+            this.electricBtn.Location = new System.Drawing.Point(877, 380);
             this.electricBtn.Name = "electricBtn";
             this.electricBtn.Size = new System.Drawing.Size(69, 20);
             this.electricBtn.TabIndex = 41;
@@ -256,7 +256,7 @@
             // 
             this.radioButton3.AutoSize = true;
             this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton3.Location = new System.Drawing.Point(1005, 110);
+            this.radioButton3.Location = new System.Drawing.Point(1129, 380);
             this.radioButton3.Name = "radioButton3";
             this.radioButton3.Size = new System.Drawing.Size(65, 20);
             this.radioButton3.TabIndex = 42;
@@ -266,14 +266,14 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(767, 147);
+            this.textBox1.Location = new System.Drawing.Point(891, 417);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(73, 20);
             this.textBox1.TabIndex = 43;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(767, 173);
+            this.textBox2.Location = new System.Drawing.Point(891, 443);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(73, 20);
             this.textBox2.TabIndex = 44;
@@ -282,7 +282,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1233, 588);
+            this.ClientSize = new System.Drawing.Size(490, 588);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.radioButton3);
