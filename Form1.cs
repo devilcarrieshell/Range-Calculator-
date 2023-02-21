@@ -105,7 +105,7 @@ namespace Range_Calculator_v
             {
                 calculator.FuelType = FuelType.Premium;
             }
-            else if (chkDisel.Checked)
+            if (EngineSize <0)
             {
                 calculator.FuelType = FuelType.Diesel;
             }
