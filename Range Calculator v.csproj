@@ -35,6 +35,9 @@
   <PropertyGroup>
     <ApplicationIcon>103260_fuel_icon.ico</ApplicationIcon>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug2|AnyCPU'">
+    <OutputPath>bin\Debug2\</OutputPath>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -49,16 +52,136 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CalculatorForm.Designer.cs">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConsumptionCalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsumptionCalculatorForm.Designer.cs">
+      <DependentUpon>ConsumptionCalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CostCalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CostCalculatorForm.Designer.cs">
+      <DependentUpon>CostCalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DiagramForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DiagramForm.Designer.cs">
+      <DependentUpon>DiagramForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceCalculatorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DistanceCalculatorForm.Designer.cs">
+      <DependentUpon>DistanceCalculatorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Electric.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Electric.Designer.cs">
+      <DependentUpon>Electric.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncomesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EncomesForm.Designer.cs">
+      <DependentUpon>EncomesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EncomeTabelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EncomeTabelForm.Designer.cs">
+      <DependentUpon>EncomeTabelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpensesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpensesForm.Designer.cs">
+      <DependentUpon>ExpensesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpensesTabelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExpensesTabelForm.Designer.cs">
+      <DependentUpon>ExpensesTabelForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormRef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormRef.Designer.cs">
+      <DependentUpon>FormRef.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefuelingTableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RefuelingTableForm.Designer.cs">
+      <DependentUpon>RefuelingTableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReminderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReminderForm.Designer.cs">
+      <DependentUpon>ReminderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="StatsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="StatsForm.Designer.cs">
+      <DependentUpon>StatsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="welcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="welcome.Designer.cs">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CalculatorForm.resx">
+      <DependentUpon>CalculatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CostCalculatorForm.resx">
+      <DependentUpon>CostCalculatorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DiagramForm.resx">
+      <DependentUpon>DiagramForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Electric.resx">
+      <DependentUpon>Electric.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesForm.resx">
+      <DependentUpon>ExpensesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpensesTabelForm.resx">
+      <DependentUpon>ExpensesTabelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormRef.resx">
+      <DependentUpon>FormRef.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -69,6 +192,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RefuelingTableForm.resx">
+      <DependentUpon>RefuelingTableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReminderForm.resx">
+      <DependentUpon>ReminderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="welcome.resx">
+      <DependentUpon>welcome.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

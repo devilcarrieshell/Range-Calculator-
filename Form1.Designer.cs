@@ -1,4 +1,6 @@
-﻿namespace Range_Calculator_v
+﻿using System;
+
+namespace Range_Calculator_v
 {
     partial class Form1
     {
@@ -41,18 +43,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.saveBtn = new System.Windows.Forms.Button();
             this.btnLoad = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
-            this.petrolheadBtn = new System.Windows.Forms.RadioButton();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.electricBtn = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.hideButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // chkPremium
@@ -166,16 +159,6 @@
             this.label1.TabIndex = 16;
             this.label1.Text = "Enter fuel consumption (L/100km):";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, -6);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(502, 592);
-            this.pictureBox1.TabIndex = 30;
-            this.pictureBox1.TabStop = false;
-            // 
             // saveBtn
             // 
             this.saveBtn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -198,99 +181,25 @@
             this.btnLoad.UseVisualStyleBackColor = false;
             this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
-            // label8
+            // hideButton
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(690, 298);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(147, 18);
-            this.label8.TabIndex = 33;
-            this.label8.Text = "Choose the fuel type:";
-            // 
-            // petrolheadBtn
-            // 
-            this.petrolheadBtn.AutoSize = true;
-            this.petrolheadBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.petrolheadBtn.Location = new System.Drawing.Point(829, 335);
-            this.petrolheadBtn.Name = "petrolheadBtn";
-            this.petrolheadBtn.Size = new System.Drawing.Size(117, 20);
-            this.petrolheadBtn.TabIndex = 34;
-            this.petrolheadBtn.TabStop = true;
-            this.petrolheadBtn.Text = "Diesel or Petrol";
-            this.petrolheadBtn.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.SystemColors.Window;
-            this.label4.Location = new System.Drawing.Point(779, 448);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(106, 13);
-            this.label4.TabIndex = 38;
-            this.label4.Text = "Enter nominal power:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.SystemColors.Window;
-            this.label10.Location = new System.Drawing.Point(778, 420);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(107, 13);
-            this.label10.TabIndex = 40;
-            this.label10.Text = "Enter maximal power:";
-            // 
-            // electricBtn
-            // 
-            this.electricBtn.AutoSize = true;
-            this.electricBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.electricBtn.Location = new System.Drawing.Point(877, 380);
-            this.electricBtn.Name = "electricBtn";
-            this.electricBtn.Size = new System.Drawing.Size(69, 20);
-            this.electricBtn.TabIndex = 41;
-            this.electricBtn.TabStop = true;
-            this.electricBtn.Text = "Electric";
-            this.electricBtn.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.radioButton3.Location = new System.Drawing.Point(1129, 380);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(65, 20);
-            this.radioButton3.TabIndex = 42;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Hybrid";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(891, 417);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(73, 20);
-            this.textBox1.TabIndex = 43;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(891, 443);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(73, 20);
-            this.textBox2.TabIndex = 44;
+            this.hideButton.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.hideButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.hideButton.Location = new System.Drawing.Point(292, 361);
+            this.hideButton.Name = "hideButton";
+            this.hideButton.Size = new System.Drawing.Size(87, 40);
+            this.hideButton.TabIndex = 33;
+            this.hideButton.Text = "Back";
+            this.hideButton.UseVisualStyleBackColor = false;
+            this.hideButton.Click += new System.EventHandler(this.hideButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(490, 588);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.radioButton3);
-            this.Controls.Add(this.electricBtn);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.petrolheadBtn);
-            this.Controls.Add(this.label8);
+            this.ClientSize = new System.Drawing.Size(444, 479);
+            this.ControlBox = false;
+            this.Controls.Add(this.hideButton);
             this.Controls.Add(this.btnLoad);
             this.Controls.Add(this.saveBtn);
             this.Controls.Add(this.chkPremium);
@@ -305,16 +214,20 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Range calculator";
+            this.Text = "Fuel calculator";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         #endregion
@@ -331,17 +244,9 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button saveBtn;
         private System.Windows.Forms.Button btnLoad;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.RadioButton petrolheadBtn;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.RadioButton electricBtn;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button hideButton;
     }
 }
 

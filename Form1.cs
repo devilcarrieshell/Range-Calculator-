@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Windows.Forms;
+using VehicleRangeCalculator;
 
 namespace Range_Calculator_v
 {
@@ -105,7 +106,7 @@ namespace Range_Calculator_v
             {
                 calculator.FuelType = FuelType.Premium;
             }
-            if (EngineSize <0)
+            else if (chkDisel.Checked)
             {
                 calculator.FuelType = FuelType.Diesel;
             }
@@ -133,6 +134,26 @@ namespace Range_Calculator_v
                     writer.WriteLine("Fuel Required: " + fuelRequired.ToString("N2") + " L");
                 }
             }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form1 form2 = new Form1();
+
+            form2.InitializeForm();
+
+            form2.Show();
+
+        }
+
+        private void InitializeForm()
+        {
+            throw new NotImplementedException();
+        }
+
+        private void hideButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
         }
     }
 
